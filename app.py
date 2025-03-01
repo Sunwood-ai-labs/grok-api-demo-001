@@ -1,6 +1,10 @@
+
 import streamlit as st
 import json
 import random
+
+st.set_page_config(layout="wide")
+
 
 # カスタムCSSの追加
 st.markdown("""
@@ -39,7 +43,7 @@ evidences = data['evidences']
 story_progress = data['story_progress']
 
 # サイドバーの設定
-st.sidebar.image("assets/header.svg", use_column_width=True)
+st.sidebar.image("assets/header.svg", use_container_width=True)
 st.sidebar.title("🕵️ 探偵ノート")
 
 # タブインターフェース
