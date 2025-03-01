@@ -1,8 +1,10 @@
-st.set_page_config(layout="wide")
 
 import streamlit as st
 import json
 import random
+
+st.set_page_config(layout="wide")
+
 
 # カスタムCSSの追加
 st.markdown("""
