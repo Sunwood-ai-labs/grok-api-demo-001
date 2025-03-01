@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景グラデーション -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a1c71" stop-opacity="1">
+        <animate attributeName="stop-color" values="#3a1c71; #d76d77; #ffaf7b; #3a1c71" dur="15s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#d76d77" stop-opacity="1">
+        <animate attributeName="stop-color" values="#d76d77; #ffaf7b; #3a1c71; #d76d77" dur="15s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ffaf7b" stop-opacity="1">
+        <animate attributeName="stop-color" values="#ffaf7b; #3a1c71; #d76d77; #ffaf7b" dur="15s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <!-- テキストグラデーション -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1">
+        <animate attributeName="stop-color" values="#ffffff; #f0f0f0; #e0e0e0; #ffffff" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#e0e0e0" stop-opacity="1">
+        <animate attributeName="stop-color" values="#e0e0e0; #ffffff; #f0f0f0; #e0e0e0" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+  
+  <!-- 角の丸い背景 -->
+  <rect width="800" height="200" rx="20" ry="20" fill="url(#bgGradient)">
+    <animate attributeName="rx" values="20; 25; 20" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="ry" values="20; 25; 20" dur="10s" repeatCount="indefinite" />
+  </rect>
+  
+  <!-- メインタイトル -->
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle" fill="url(#textGradient)">
+    Grok API Demo
+    <animate attributeName="y" values="90; 92; 90" dur="4s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- サブタイトル -->
+  <text x="400" y="130" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="url(#textGradient)">
+    Interactive Mystery Solving Experience
+    <animate attributeName="y" values="130; 132; 130" dur="4s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- 装飾要素 - 円 -->
+  <circle cx="100" cy="150" r="15" fill="rgba(255, 255, 255, 0.3)">
+    <animate attributeName="r" values="15; 20; 15" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3; 0.6; 0.3" dur="3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="700" cy="50" r="20" fill="rgba(255, 255, 255, 0.3)">
+    <animate attributeName="r" values="20; 25; 20" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3; 0.7; 0.3" dur="4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="750" cy="150" r="10" fill="rgba(255, 255, 255, 0.3)">
+    <animate attributeName="r" values="10; 12; 10" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3; 0.5; 0.3" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="50" cy="50" r="12" fill="rgba(255, 255, 255, 0.3)">
+    <animate attributeName="r" values="12; 15; 12" dur="3.5s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3; 0.6; 0.3" dur="3.5s" repeatCount="indefinite" />
+  </circle>
+</svg>
